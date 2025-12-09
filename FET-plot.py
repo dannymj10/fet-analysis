@@ -177,7 +177,7 @@ def create_wl_annotation(ax, name, vth_ss_values=None, sheets=None):
     text_box.patch.set_alpha(0.95)
     ax.add_artist(text_box)
 
-# Main plotting function
+# Main plotting functions
 def plot_transfer_data(file, name, cc, ax, filename=""):
     """Plot transfer characteristics (Id vs Vgs) with sqrt(Id) and V_th/SS extraction."""
     sheets = [sheet for sheet in file.keys() if sheet not in ['Calc', 'Settings']]
